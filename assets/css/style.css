@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&family=Montserrat&family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Roboto+Slab&family=Sacramento&family=Ubuntu:wght@400;500;700&family=Work+Sans:wght@100;400;600;700&display=swap");
+/* variabel css */
+:root {
+  --pink: #ec51c0;
+  --bg: #0a0a0a;
+  --shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* style utk body */
+body {
+  font-size: 1.3rem;
+  font-family: "Work Sans", sans-serif;
+  min-height: 2000px;
+}
+
+/* style utk class hero */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg-wedding.jpg);
+  z-index: -1;
+  filter: grayscale(0.5);
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+.hero h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 6rem;
+}
+.hero h4 {
+  font-size: 1.5rem;
+}
+.hero p {
+  font-size: 1.4rem;
+}
+.hero a {
+  color: var(--pink);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+.hero a:hover {
+  background-color: var(--pink);
+  color: white;
+}
+
+/* MEDIA QUERIES */
+/* Laptop/PC */
+@media (max-width: 992px) {
+  html {
+    font-size: 70%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+  }
+}
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 50px;
+    margin: 5px;
+  }
+} /* Smartphone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 45px;
+    margin: 3px;
+  }
+}
